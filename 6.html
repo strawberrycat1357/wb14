@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    let s = [
+        ["姓名", "國文", "英文", "數學"],
+        ["王大同", 85, 88, 77],
+        ["林麥可", 99, 86, 89],
+        ["張淑芬", 75, 92, 86]
+    ];
+    document.write('<table border="1>"<tr>');
+
+    for (let i = 0; i < s.length; i++) 
+    {
+        document.write("<tr>");
+        for (let j = 0; j < s[i].length; j++)
+        {
+            document.write("<td>" + s[i][j] + "</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+</script>
+</body>
+</html>
